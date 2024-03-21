@@ -1,0 +1,8 @@
+x64/Debug/*
+x64/Release-DLL/*
+x64/Release-Library/*
+Debug/*
+Release-DLL/*
+Release-Library/*
+.vs
+*.aps
