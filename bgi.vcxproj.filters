@@ -45,7 +45,7 @@
     <ClCompile Include="dibutil.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="main.cxx">
+    <ClCompile Include="conio.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -63,6 +63,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="dibutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bgi.def">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="conio.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
