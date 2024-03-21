@@ -1,0 +1,142 @@
+LIBRARY   BGI
+
+EXPORTS
+
+; Drawing Functions
+arc @1
+bar @2
+bar3d @3
+circle @4
+cleardevice @5
+clearviewport @6
+drawpoly @7
+ellipse @8
+fillellipse @9
+fillpoly @10
+floodfill @11
+line @12
+linerel @13
+lineto @14
+pieslice @15
+putpixel @16
+rectangle @17
+sector @18
+
+; Miscellaneous Functions
+getdisplaycolor @19
+converttorgb @20
+delay @21
+getarccoords @22
+getbkcolor @23
+getcolor @24
+getfillpattern @25
+getfillsettings @26
+getlinesettings @27
+getmaxcolor @28
+getmaxheight @29
+getmaxwidth @30
+getmaxx @31
+getmaxy @32
+getrefreshingbgi @33
+getwindowheight @34
+getwindowwidth @35
+getpixel @36
+getviewsettings @37
+getx @38
+gety @39
+moverel @40
+moveto @41
+refreshbgi @42
+refreshallbgi @43
+setbkcolor @44
+setcolor @45
+setfillpattern @46
+setfillstyle @47
+setlinestyle @48
+setrefreshingbgi @49
+setviewport @50
+setwritemode @51
+
+; Window Creation / Graphics Manipulation
+closegraph @52
+detectgraph @53
+getaspectratio @54
+getdrivername @55
+getgraphmode @56
+getmaxmode @57
+getmodename @58
+getmoderange @59
+graphdefaults @60
+grapherrormsg @61
+graphresult @62
+initgraph @63
+initwindow @64
+restorecrtmode @65
+setaspectratio @66
+setgraphmode @67
+showerrorbox @68
+
+; User Interaction
+getch @69
+kbhit @70
+
+; User-Controlled Window Functions (winbgi.cpp)
+getcurrentwindow @71
+setcurrentwindow @72
+
+; Double buffering support (winbgi.cpp)
+getactivepage @73
+getvisualpage @74
+setactivepage @75
+setvisualpage @76
+swapbuffers @77
+
+; Image Functions (drawing.cpp)
+imagesize @78
+getimage @79
+putimage @80
+printimage @81
+readimagefile @82
+writeimagefile @83
+
+; Text Functions (text.cpp)
+gettextsettings @84
+outtext @85
+outtextxy @86
+settextjustify @87
+settextstyle @88
+setusercharsize @89
+textheight @90
+textwidth @91
+outstream @92
+outstreamxy @93
+
+; Mouse Functions (mouse.cpp)
+clearmouseclick @94
+getmouseclick @95
+ismouseclick @96
+mousex @97
+mousey @98
+registermousehandler @99
+setmousequeuestatus @100
+
+; Palette Functions
+getdefaultpalette @101
+getpalette @102
+getpalettesize @103
+setallpalette @104
+setpalette @105
+setrgbpalette @106
+
+; Color Macros
+COLOR @107
+
+; CONIO.H
+gotoxy @108
+cls @109
+clrscr @110
+random @111
+RedirectConsoleIO @112
+ReleaseConsole @113
+AdjustConsoleBuffer @114
+CreateNewConsole @115
