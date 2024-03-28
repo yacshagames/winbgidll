@@ -1,16 +1,18 @@
 /*******************************
 Conio.h
-By Yacsha - 2024-03-20
+Old Borland C++ and Turbo C functions. Not Standard
+
+Version 2 - 27-III-2024
+randomize function added
+
+Version 1 - 20-III-2024
+gotoxy, cls, clrscr, random functions are added
+
+By Yacsha
 *******************************/
 
 #pragma once
 #include <Windows.h>
-#include <stdio.h>
-#include <fcntl.h>
-#include <io.h>
-#include <iostream>
-#include <fstream>
-
 
 void gotoxy(int x, int y);
 
@@ -18,13 +20,8 @@ void cls(HANDLE hConsole);
 
 void clrscr();
 
-// Genera un aleatorio desde 0 hasta nRangoMayor
-int random(int nRangoMayor);
+// Generates a random from 0 to randomMax
+int random(int randomMax);
 
-bool RedirectConsoleIO();
-
-bool ReleaseConsole();
-
-void AdjustConsoleBuffer(int16_t minLength);
-
-bool CreateNewConsole(int16_t minLength);
+// Start the seed to generate random numbers. Used with the random function
+int randomize();
