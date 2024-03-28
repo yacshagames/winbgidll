@@ -24,4 +24,4 @@ void clrscr();
 int random(int randomMax);
 
 // Start the seed to generate random numbers. Used with the random function
-int randomize();
+void randomize();

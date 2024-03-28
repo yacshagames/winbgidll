@@ -57,12 +57,12 @@ void clrscr() {
 	cls(hStdout);
 }
 
-// Start the seed to generate random numbers. Used with the random function
-int randomize() {
-	srand((unsigned int)time(0));
-}
-
 // Generates a random from 0 to randomMax
 int random(int randomMax) {
 	return rand() % (randomMax +1);
+}
+
+// Start the seed to generate random numbers. Used with the random function
+void randomize() {
+	srand((unsigned int)time(0));
 }
