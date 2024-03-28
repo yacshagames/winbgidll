@@ -131,12 +131,12 @@ setrgbpalette @106
 ; Color Macros
 COLOR @107
 
+; new functions
+setbkmode @108
+
 ; CONIO.H
-gotoxy @108
-cls @109
-clrscr @110
-random @111
-RedirectConsoleIO @112
-ReleaseConsole @113
-AdjustConsoleBuffer @114
-CreateNewConsole @115
+gotoxy @109
+cls @110
+clrscr @111
+random @112
+randomize @113

@@ -510,6 +510,15 @@ void setbkcolor( int color )
     ReleaseMutex(pWndData->hDCMutex);
 }
 
+void setbkmode(int mode)
+{
+	WindowData* pWndData = BGI__GetWindowDataPtr();
+
+	WaitForSingleObject(pWndData->hDCMutex, 5000);
+	for (int i = 0; i < MAX_PAGES; i++)
+		SetBkMode(pWndData->hDC[i], mode);
+	ReleaseMutex(pWndData->hDCMutex);
+}
 
 void setcolor( int color )
 {
