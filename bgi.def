@@ -140,3 +140,8 @@ cls @110
 clrscr @111
 random @112
 randomize @113
+wherex @114
+wherey @115
+textcolor @116
+cgetch @117
+ckbhit @118
